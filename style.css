@@ -34,6 +34,7 @@
     --aseprite-icon-color: #ffffff;
     --topic-color:#5967ff;
 }
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -67,14 +68,12 @@ nav {
     align-items: center;
 }
 
-
 nav a {
     color: var(--text-primary); /* #B1B7D1 */
     text-decoration: none;
     transition: color 0.2s;
     font-size: 1.1em;
 }
-
 
 nav ul a:hover {
     color: var(--accent-color); /* #5967ff */
@@ -166,7 +165,7 @@ main{
      flex: 1;
 }
 .dark-theme #conteudo-principal {
-     box-shadow: 0 4px 8px rgba(89, 103, 255, 0.15);
+    box-shadow: 0 4px 8px rgba(89, 103, 255, 0.15);
 }
 
 h2 {
@@ -217,7 +216,7 @@ padding-bottom: 20px;
     color:var(--topic-color)
 }
 #ferramentas h3 {
-    font-size: 1.25em;
+    font-size: 1.225em;
     color: var(--accent-color);
     margin-bottom: 0;
 }
@@ -373,7 +372,7 @@ footer {
 }
 
 #tutorial-content {
-    padding: 60px 0;
+    padding: 50px 0;
     width: 80%;
     max-width: 1100px;
     color: var(--text-content-color);
@@ -381,10 +380,23 @@ footer {
     margin:0 auto;
     margin-top: 15px;
     border-radius: 8px;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
     font-size: 1.1em; 
     line-height: 1.5;
     flex-direction: row-reverse;
+    background-color: var(--features-grid-color);
+    margin-bottom: 30px;
+
+}
+
+.dark-theme #tutorial-content {
+    box-shadow: 0 4px 8px rgba(89, 103, 255, 0.15);
+}
+
+.conteudo-textual {
+    margin-left: 20px;
+    margin-right: 5px;
+    flex: 1;
 }
 
 .tutorial-imagem {
@@ -404,10 +416,6 @@ footer {
 
 
 
-
-
-
-
 /* - - - PARTE DA GALERIA - - - */
 
 
@@ -418,13 +426,13 @@ footer {
     color: var(--topic-color);
 }
 
-/* Contêiner principal da galeria */
+/* parte principal da galeria */
 .galeria-container {
     width: 80%;
     max-width: 1200px;
-    margin: 50px auto; /* Centraliza e adiciona margem superior/inferior */
+    margin: 50px auto; 
     padding: 30px;
-    background-color: var(--features-grid-color); /* Usa a cor de fundo dos cards/conteúdos */
+    background-color: var(--features-grid-color); 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: var(--text-content-color);
@@ -434,7 +442,6 @@ footer {
     box-shadow: 0 4px 8px rgba(89, 103, 255, 0.15);
 }
 
-/* Títulos de Subcategoria (Herói, Esqueleto, etc.) */
 .galeria-container h3 {
     color: var(--emphasis-color);
     margin-top: 25px;
@@ -443,44 +450,44 @@ footer {
     text-align: center;
 }
 
-/* Contêiner das imagens de personagens - Exibição em linha com espaçamento */
+
 .galeria-personagens {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaço entre as imagens */
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--bg-main); /* Um fundo leve para destaque */
+    background-color: var(--bg-main); 
     margin-bottom: 30px;
 }
 
-/* Estilo para as imagens de personagens */
+
 .galeria-personagens img {
-    width: 100px; /* Largura fixa para sprites de personagem */
+    width: 100px; 
     height: 100px;
-    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-fit: contain; 
     border: 1px solid var(--icons-color);
     border-radius: 4px;
     transition: transform 0.3s ease;
 }
 
-/* Estilo para as imagens de personagens */
+
 .galeria-personagens img {
-    width: 100px; /* Largura fixa para sprites de personagem */
+    width: 100px; 
     height: 100px;
-    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-fit: contain; 
     border: 1px solid var(--icons-color);
     border-radius: 4px;
     transition: transform 0.3s ease;
 }
 
 .galeria-personagens img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
     border-color: var(--accent-color);
 }
 
-/* Contêiner das imagens de melhorias - Centraliza uma única imagem */
+
 .galeria-melhorias {
     display:inline-block;
     justify-content: center;
@@ -498,7 +505,7 @@ footer {
 }
 
 .melhoria-item {
-    width: 30%; /* Garante que três caibam lado a lado */
+    width: 30%; 
     text-align: center;
     padding: 10px 5px;
     border-radius: 8px;
@@ -506,7 +513,7 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilo para as imagens de melhorias */
+
 .galeria-melhorias img {
     width: 75px;
     height: 75px;
@@ -515,7 +522,7 @@ footer {
 }
 
 .galeria-melhorias img:hover {
-    transform: rotate(8deg) scale(1.2); /* Efeito de rotação e zoom */
+    transform: rotate(8deg) scale(1.2); 
   
 }
 
@@ -531,7 +538,7 @@ footer {
 }
 
 .galeria-adaga img:hover {
-    transform: rotate(8deg) scale(1.2); /* Efeito de rotação e zoom */
+    transform: rotate(8deg) scale(1.2); 
   
 }
 .galeria-adaga {
@@ -570,71 +577,153 @@ footer {
     border-radius: 4px;
 }
 
-/* Media Query para Responsividade */
+/* RESPONSIVIDADE */
+
+
+/*  telas menores  */
 @media (max-width: 768px) {
+    /* Navegação */
+    .nav-list {
+        display: none; /* Esconde a lista de navegação padrão em telas pequenas */
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    
+    #conteudo-apresentacao, #conteudo-godot-principal {
+        flex-direction: column; 
+        width: 90%;
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+
+    .conteudo-imagem,
+    .conteudo-godot-imagem {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    .conteudo-textual,
+    .conteudo-textual-godot {
+        margin: 0;
+        margin-left:15px;
+        margin-right:5px;
+    }
+
+
+    .feature-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .feature-item {
+        width: 100%; 
+        min-width: unset; 
+    }
+
     .galeria-container {
-        width: 95%; /* Usa mais espaço em telas menores */
-        padding: 20px 10px;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .melhoria-item, .arma-adaga {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .melhorias-grid {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .galeria-personagens {
-        gap: 10px; /* Reduz o espaço entre as imagens */
-        justify-content: space-around; /* Distribui melhor os itens */
+        justify-content: space-around;
     }
 
     .galeria-personagens img {
-        width: 70px; /* Reduz o tamanho das imagens de personagem */
-        height: 70px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .galeria-storyboard img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    #tema {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
+/* Telas Maiores */
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    nav {
+        padding: 20px 25px;
+    }
 
-@media screen and (max-width: 768px) {
+    #conteudo-apresentacao,
+    #conteudo-godot-principal {
+        width: 90%;
+        padding: 35px;
+    }
+    
+    .conteudo-imagem,
+    .conteudo-godot-imagem {
+        width: 40%;
+    }
+
     .feature-item {
-        width: 80%;
-    }
-}
-
-/* --- RESPONSIVIDADE BÁSICA --- */
-@media (max-width: 800px) {
-    .hero {
-        flex-direction: column; /* Pilha verticalmente */
-        text-align: center;
-    }
-    .feature-grid {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1000px) 
-{
-    #conteudo-apresentacao {
-        
-        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
-        width: 90%; /* Aumenta a largura em telas menores para usar mais espaço */
-        padding: 40px 20px; /* Ajusta o preenchimento */
-        align-items: center; /* Centraliza os itens ao empilhar */
-        margin-left:auto; 
-        margin-right:auto;
-    
-    }
-    #conteudo-principal {
-        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
-        width: 90%; /* Aumenta a largura em telas menores para usar mais espaço */
-        padding: 40px 20px; /* Ajusta o preenchimento */
-        align-items: center; /* Centraliza os itens ao empilhar */
+        width: 45%; 
+        margin-bottom: 20px;
     }
 
-    .conteudo-imagem {
-        width: 80%; /* A imagem ocupa mais espaço horizontalmente */
-        max-width: 450px; /* Limita o tamanho máximo da imagem */
-        margin: 0 0 20px 0; /* Remove margens laterais, adiciona margem inferior */
+    .galeria-container {
+        width: 90%;
     }
-    
-    .conteudo-textual {
-        margin: 0; /* Remove margens laterais */
-        padding: 0 15px; /* Adiciona preenchimento para não grudar nas bordas */
-        text-align: center; /* Centraliza o texto */
+    .melhoria-item {
+        width: 45%; 
+        margin-bottom: 20px;
     }
+
+
+.tutorial-title {
+    font-size: 2.5em;
+    color: var(--topic-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
+
+.conteudo-textual h2 {
+    margin-top: 0;
+}
+
+
+.tutorial-imagem {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+}
+
